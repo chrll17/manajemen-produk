@@ -1,3 +1,13 @@
+<!-- 
+
+1. edit .env bagian database
+2. buat components\layout.blade.php "php artisan make:component layout"
+3. buat produk\index.blade.php "php artisan make:view produk.index"
+4. buat model, controller, migrasi Produk "php artisan make:model Produk -cm --resource"
+5. edit route
+
+ -->
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
