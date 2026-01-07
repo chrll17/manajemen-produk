@@ -1,9 +1,8 @@
 <!-- 
 
 1. edit route
-2. edit index bagian edit produk
-3. edit ProdukController method edit
-4. buat produk\edit.blade.php "php artisan make:view produk.edit"
+2. edit ProdukController method update
+3. edit edit.blade.php
 
  -->
 
