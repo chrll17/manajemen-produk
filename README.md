@@ -1,10 +1,7 @@
 <!-- 
 
-1. edit .env bagian database
-2. buat components\layout.blade.php "php artisan make:component layout"
-3. buat produk\index.blade.php "php artisan make:view produk.index"
-4. buat model, controller, migrasi Produk "php artisan make:model Produk -cm --resource"
-5. edit route
+1. edit ProdukController method index
+2. edit index.blade.php 
 
  -->
 

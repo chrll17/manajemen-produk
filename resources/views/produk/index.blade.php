@@ -17,13 +17,14 @@
                 <th scope="col">Opsi</th>
                 </tr>
             </thead>
+            @foreach ($produk as $p)
                 <tbody>
                     <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th scope="row">{{ $loop->iteration }}</th>
+                        <td>{{ $p['nama'] }}</td>
+                        <td>{{ $p['kategori'] }}</td>
+                        <td>Rp {{ number_format($p['harga'], 0, ',', '.') }}</td>
+                        <td>{{ $p['stok'] }}</td>
                         <td>
                             <div class="d-flex gap-1">
                                 <a href="" class="btn btn-warning mb-1">edit</a>
@@ -36,6 +37,7 @@
                         </td>
                     </tr>
                 </tbody>
+            @endforeach
         </table>
     </div>
 </x-layout>
