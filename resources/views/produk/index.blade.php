@@ -3,7 +3,7 @@
         produk
     </x-slot:title>
     <div class="mt-2 mx-2">
-        <a href="" class="btn btn-primary">tambah produk</a>
+        <a href="{{ route('tambah') }}" class="btn btn-primary">tambah produk</a>
     </div>
     <div class="mx-5 mt-2">
         <table class="table">
