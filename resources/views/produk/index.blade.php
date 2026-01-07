@@ -27,7 +27,7 @@
                         <td>{{ $p['stok'] }}</td>
                         <td>
                             <div class="d-flex gap-1">
-                                <a href="" class="btn btn-warning mb-1">edit</a>
+                                <a href="{{ route('edit',$p['id']) }}" class="btn btn-warning mb-1">edit</a>
                                 <form action="" method="post">
                                     @csrf
                                     @method('DELETE')

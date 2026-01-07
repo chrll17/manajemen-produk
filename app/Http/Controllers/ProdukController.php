@@ -59,7 +59,7 @@ class ProdukController extends Controller
      */
     public function edit(Produk $produk)
     {
-        //
+        return view('produk.edit',['produk'=>$produk]);
     }
 
     /**
