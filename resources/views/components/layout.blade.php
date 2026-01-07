@@ -44,6 +44,18 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <div class="user-info">
+                <i class="fas fa-user-circle user-icon"></i>
+                <span>
+                  {{ Auth::user()->name }} | {{ Auth::user()->email }}
+                </span>          
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     @if (session('sukses'))

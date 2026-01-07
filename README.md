@@ -1,10 +1,10 @@
 <!-- 
 
-1. buat AuthController "php artisan make:controller AuthController"
-1. edit route
-2. buat components\auth-layout.blade.php "php artisan make:component auth-layout"
-3. buat auth\register.blade.php "php artisan make:view auth.register"
-3. buat auth\login.blade.php
+1. edit AuthController
+2. edit route
+3. edit register.blade.php
+4. edit login.blade.php
+5. edit layout.blade.php
 
  -->
 

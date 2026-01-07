@@ -16,4 +16,6 @@ Route::controller(ProdukController::class)->group(function(){
 Route::controller(AuthController::class)->group(function(){
     route::get('/register','showRegister')->name('showRegister');    
     route::get('/login','showLogin')->name('showLogin');
+    route::post('/register','register')->name('register');
+    route::post('/login','login')->name('login');
 });
