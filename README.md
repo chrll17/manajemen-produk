@@ -1,8 +1,8 @@
 <!-- 
 
 1. edit route
-2. edit ProdukController method update
-3. edit edit.blade.php
+2. edit ProdukController method destroy
+3. edit index.blade.php
 
  -->
 

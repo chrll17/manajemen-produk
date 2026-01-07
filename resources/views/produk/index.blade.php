@@ -28,7 +28,7 @@
                         <td>
                             <div class="d-flex gap-1">
                                 <a href="{{ route('edit',$p['id']) }}" class="btn btn-warning mb-1">edit</a>
-                                <form action="" method="post">
+                                <form action="{{ route('hapus',$p['id']) }}" method="post">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger">hapus</button>
