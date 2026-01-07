@@ -29,7 +29,21 @@ class ProdukController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated=$request->validate([
+            'nama'=>'required',
+            'kategori'=>'required',
+            'harga'=>'required|numeric',
+            'stok'=>'required|numeric',
+        ]);
+
+        Produk::create([
+            'nama'=>$validated['nama'],
+            'kategori'=>$validated['kategori'],
+            'harga'=>$validated['harga'],
+            'stok'=>$validated['stok']
+        ]);
+
+        return redirect()->route('index')->with('sukses','data berhasil ditambahkan');
     }
 
     /**

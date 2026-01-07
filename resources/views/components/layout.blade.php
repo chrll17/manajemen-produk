@@ -46,6 +46,11 @@
         </button>
       </div>
     </nav>
+    @if (session('sukses'))
+        <div class="alert alert-success" role="alert">
+            {{ session('sukses') }}
+        </div>
+    @endif
     {{ $slot }}
 
     <!-- Optional JavaScript; choose one of the two! -->
