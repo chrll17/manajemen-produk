@@ -46,14 +46,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <div class="user-info">
-                <i class="fas fa-user-circle user-icon"></i>
-                <span>
-                  {{ Auth::user()->name }} | {{ Auth::user()->email }}
-                </span>          
-              </div>
-            </li>
+            @auth                
+                <li class="nav-item">
+                    <div class="user-info">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span>
+                            {{ Auth::user()->name }} | {{ Auth::user()->email }}
+                        </span>          
+                    </div>
+                </li>
+                <!-- Logout Button -->
+                <li class="nav-item">
+                    <form action="{{ route('logout') }}" method="post" class="d-inline">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-danger btn-sm">
+                            Logout
+                        </button>
+                    </form>
+                </li>
+            @endauth
           </ul>
         </div>
       </div>

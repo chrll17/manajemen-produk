@@ -41,4 +41,10 @@ class AuthController extends Controller
             'email'=>'email/password salah'
         ]);
     }
+    public function logout(Request $request){
+        auth::logout();
+        $request->session()->invalidate(); 
+        $request->session()->regenerateToken(); 
+        return redirect()->route('showLogin');
+    }
 }
