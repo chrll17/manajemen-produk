@@ -46,7 +46,7 @@ class ProdukController extends Controller
         if($validator->fails()){
             return response()->json($validator->errors(), 422);
         }
-        
+
         $produk->update([
             'nama'=>$request['nama'],
             'kategori'=>$request['kategori'],
@@ -55,5 +55,11 @@ class ProdukController extends Controller
         ]);
 
         return new ProdukResource(true, 'Data Produk Berhasil Diubah!', $produk);
+    }
+    public function destroy(Produk $produk)
+    {
+        $produk->delete();
+
+        return new ProdukResource(true, 'Data Produk Berhasil Dihapus!', null);
     }
 }
