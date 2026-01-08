@@ -1,7 +1,10 @@
 <!-- 
 
-1. edit route
-2. edit layout.blade.php
+1. buat api resource "php artisan make:resource ProdukResource:
+2. buat controller produk untuk api "php artisan make:controller api/ProdukController"
+3. buat route rest api "php artisan install:api"
+
+test get data di postman http://localhost:8000/api/produk
 
  -->
 
