@@ -1,10 +1,8 @@
 <!-- 
 
-1. buat api resource "php artisan make:resource ProdukResource:
-2. buat controller produk untuk api "php artisan make:controller api/ProdukController"
-3. buat route rest api "php artisan install:api"
+1. edit api\ProdukController
 
-test get data di postman http://localhost:8000/api/produk
+test post data di postman
 
  -->
 
