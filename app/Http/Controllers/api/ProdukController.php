@@ -35,4 +35,25 @@ class ProdukController extends Controller
 
         return new ProdukResource(true, 'Data Produk Berhasil Ditambahkan!', $produk);
     }
+    public function update(Request $request, Produk $produk)
+    {
+        $validator=Validator::make($request->all(),[
+            'nama'=>'required',
+            'kategori'=>'required',
+            'harga'=>'required|numeric',
+            'stok'=>'required|numeric',
+        ]);
+        if($validator->fails()){
+            return response()->json($validator->errors(), 422);
+        }
+        
+        $produk->update([
+            'nama'=>$request['nama'],
+            'kategori'=>$request['kategori'],
+            'harga'=>$request['harga'],
+            'stok'=>$request['stok']
+        ]);
+
+        return new ProdukResource(true, 'Data Produk Berhasil Diubah!', $produk);
+    }
 }
