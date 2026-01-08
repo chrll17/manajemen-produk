@@ -1,8 +1,7 @@
 <!-- 
 
-1. edit layout.blade.php
-2. edit route
-3. edit AuthController
+1. edit route
+2. edit layout.blade.php
 
  -->
 

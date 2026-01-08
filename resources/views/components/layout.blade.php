@@ -46,6 +46,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            @guest
+            <!-- Login Button -->
+                <li class="nav-item">
+                    <a href="{{ route('showLogin') }}" class="btn btn-outline-primary btn-sm me-2">
+                        Login
+                    </a>
+                </li>        
+            <!-- Register Button -->
+                <li class="nav-item">
+                    <a href="{{ route('showRegister') }}" class="btn btn-outline-primary btn-sm me-2">
+                        Register
+                    </a>
+                </li>
+            @endguest
             @auth                
                 <li class="nav-item">
                     <div class="user-info">
